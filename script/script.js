@@ -2,7 +2,6 @@ const switchElement = document.querySelector('.dark-mode-switch');
 const body=document.querySelector("body");
 const menuItem=document.querySelectorAll(".item")
 switchElement.addEventListener('click', function () {
-    // Hint: Add 'dark' class to body :))
     document.body.classList.toggle("dark");
     if(document.body.className.includes("dark")){
         localStorage.setItem("theme","dark")
