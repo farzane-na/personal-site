@@ -1,10 +1,18 @@
 @font-face {
-    font-family: "Samim";
-    src: url("../font/Samim.ttf") format("TrueType");
+  font-family: "Estedad-Medium";
+  src: url("../font/Estedad-Medium.ttf") format("TrueType");
 }
 @font-face {
-    font-family: "samim-Bold";
-    src: url("../font/Samim-Bold.ttf") format("TrueType");
+    font-family: "Estedad-Light";
+    src: url("../font/Estedad-Light.ttf") format("TrueType");
+}
+@font-face {
+    font-family: "Estedad-Bold";
+    src: url("../font/Estedad-Bold.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Estedad-Regular";
+  src: url("../font/Estedad-Regular.ttf") format("TrueType");
 }
 
  html {
@@ -170,7 +178,7 @@
 }
 
 body {
-    font-family: "Samim";
+    font-family: "Estedad-Medium";
     background-color: #F8FAE5;
 }
 
