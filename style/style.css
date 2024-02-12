@@ -349,9 +349,13 @@ main{
 }
 .skill__percent-wrapper{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill__percent-wrapper div{
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  
   gap: 0.3rem;
 }
 .skill__percent-right{
@@ -360,6 +364,74 @@ main{
 .skill-image{
   width: 100%;
   height: 100%;
+}
+/*Footer*/
+/*Timeline*/
+#scroll-progress{
+  width: 0%;
+  height: 4px;
+  position: fixed;
+  background-color: #2d4624;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/*Comment*/
+
+.comment{
+  margin: 6rem 0 3rem;
+}
+.comment__title{
+  font-family: "Estedad-Bold";
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+.comment__wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.comment__box{
+  width: 25%;
+  border: 1px solid #000;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.comment__box-profile{
+  padding: 0.3rem;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.image{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
+.customer-name{
+  font-family: "Estedad-Regular";
+  font-size: 0.8rem;
+}
+.comment__box-text{
+  font-family: "Estedad-Light";
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-align: justify;
 }
 /* Respansive */
 @media only screen and (max-width: 1200px) {
