@@ -94,13 +94,7 @@
   button,
   select { /* 1 */
     text-transform: none;
-  }  
-  button,
-  [type="button"],
-  [type="reset"],
-  [type="submit"] {
-    -webkit-appearance: button;
-  } 
+  }
   button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner,
   [type="reset"]::-moz-focus-inner,
@@ -139,11 +133,7 @@
   [type="number"]::-webkit-inner-spin-button,
   [type="number"]::-webkit-outer-spin-button {
     height: auto;
-  }  
-  [type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
-  } 
+  }
   [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
   } 
@@ -273,11 +263,19 @@ body {
 }
 .menu-item{
     list-style-type: none;
-}
-.item{
+    position: relative;
+  }
+
+  .item{
     text-decoration: none;
     color: #000;
     cursor: pointer;
+    transition: all 0.3s ease;
+    /* position: absolute; */
+}
+.item:hover{
+  color: #5f884f;
+  transform: translateY(2px);
 }
 /* Header Bottom*/
 .header-bottom{
@@ -307,7 +305,7 @@ body {
 }
 /* Main*/
 main{
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 .skills{
   width: 100%;
@@ -365,52 +363,47 @@ main{
   width: 100%;
   height: 100%;
 }
-/*Footer*/
-/*Timeline*/
-#scroll-progress{
-  width: 0%;
-  height: 4px;
-  position: fixed;
-  background-color: #2d4624;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-}
-
 /*Comment*/
 
 .comment{
-  margin: 6rem 0 3rem;
+  margin: 6rem 0 6rem;
 }
 .comment__title{
   font-family: "Estedad-Bold";
     font-size: 1.7rem;
     margin-bottom: 2rem;
 }
-.comment__wrapper{
+.swiper {
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
+  height: 100%;
 }
-.comment__box{
-  width: 25%;
-  border: 1px solid #000;
+.swiper-slide {
+  height: 100%;
+  font-size: 18px;
+  background: #fff;
+  border: 1px solid #B19470;
   border-radius: 0.8rem;
   padding: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px #B19470;
+}
+.comment-wrapper{
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
 }
 .comment__box-profile{
   padding: 0.3rem;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #B19470;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
+  width: 100%;
 }
 .image{
   display: flex;
@@ -431,8 +424,22 @@ main{
   font-family: "Estedad-Light";
   font-size: 0.8rem;
   line-height: 1.5rem;
+  width: 100%;
   text-align: justify;
 }
+
+/*Footer*/
+/*Timeline*/
+#scroll-progress{
+  width: 0%;
+  height: 4px;
+  position: fixed;
+  background-color: #2d4624;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
 /* Respansive */
 @media only screen and (max-width: 1200px) {
 
