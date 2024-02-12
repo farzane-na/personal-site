@@ -427,7 +427,42 @@ main{
   width: 100%;
   text-align: justify;
 }
-
+.contact__title{
+  font-family: "Estedad-Bold";
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+.contacr__text{
+  font-family: "Estedad-Medium";
+  margin-bottom: 3rem;
+}
+.contact__way{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact__email,
+.contact__telegram,
+.contact__phone,
+.contact__github{
+  width: 20rem;
+  height: 10rem;
+}
+.contact__photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.contact__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__link a{
+  text-decoration: none;
+}
 /*Footer*/
 /*Timeline*/
 #scroll-progress{
